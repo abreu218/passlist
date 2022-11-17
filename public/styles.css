@@ -1,0 +1,138 @@
+body {
+    font-family: monospace;
+    color: #fff;
+    padding: 50px;
+    background-color: hwb(200 12% 86%);
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 97vh;
+    
+}
+header{
+    font-size: 1rem;
+}
+header,form{
+    
+    justify-content: center;
+    min-height:7vh;
+}
+.logo {
+    width: 100%;
+    font-size: 5em;
+    padding: 50px 0px;
+}
+
+form input, .password-button {
+    width: 200px;
+    display: inline;
+    padding: 0.1rem;
+    font-size: 16px;
+    border: none;
+   
+}
+
+form input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: lightgray;
+}
+
+
+.password-button, .fa-plus {
+    color:gray;
+    background: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.password-button:hover, .fa-plus:hover{
+    color:rgb(15, 226, 15);
+    
+}
+.fa-plus:hover{
+    transform: rotateZ(-90deg);
+}
+
+
+
+
+.time{
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+    font-size: 6px;
+    padding: 10px;
+    
+}
+
+footer {
+    position: absolute;
+    width: 80%;
+    color: #fff;
+    line-height: 50px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}
+ul{
+    list-style-type: none;
+}
+.password-container{
+    margin: auto;
+    background-color: hwb(205 15% 79%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin:auto;
+    
+}
+.password-list{
+    min-width: 65%;
+    margin-right: 30px ;
+}
+
+.password{
+    align-items: center;
+    display: flex;
+    margin: 0.1rem;
+    justify-content: space-between; 
+    
+}
+
+.password-item{
+    text-align: left;
+    flex: 1;
+    padding: 7px 10px;
+   
+}
+.delete-btn{
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .4s;
+    margin: -3px
+}
+.app-input, .account-input, .password-input{
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.app-item, .account-item, .password-item{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+    
+}
+.fa-delete-left{
+    pointer-events: none;
+}
+
+
+.delete-btn:hover{
+    color: rgb(224, 101, 0);
+}
+
