@@ -30,7 +30,7 @@ export default class Account extends Component {
   vaultGet(){
     const saved = localStorage.getItem("user");
       axios
-      .get(`http://localhost:5000/vault/${saved}`)
+      .get(`https://abreu-backend.herokuapp.com/vault/${saved}`)
       .then(res => this.setState({
         vaultEntries: res.data.vault_entry,
         
@@ -50,7 +50,7 @@ export default class Account extends Component {
     console.log(data)
       axios
 
-      .post(`http://localhost:5000/vault/${saved}`, data)
+      .post(`https://abreu-backend.herokuapp.com/vault/${saved}`, data)
       .then(res => console.log(res))
       .then(res => this.setState({
         user: res.data.user,
