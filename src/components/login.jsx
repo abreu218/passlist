@@ -104,7 +104,7 @@ export default class Login extends Component {
         userPass: this.state.password
       }
       axios
-      .post('http://localhost:5000/login', data)
+      .post('https://abreu-backend.herokuapp.com/login', data)
       .then(res => this.setState({
         user: res.data.user,
         successfulLogin: true
